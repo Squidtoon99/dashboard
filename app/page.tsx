@@ -4,8 +4,8 @@ import TimelineSection from "@/components/timeline/TimelineSection";
 import BenefitCard from "@/components/BenefitCard";
 import Usage from "@/components/Usage";
 import { Diamond } from "@/components/icons/diamond";
-import { Session } from "@/lib/types";
-import { getData, getUsage } from '@/lib/redis';
+import { Session } from "@/components/lib/types";
+import { getData, getUsage } from '@/components/lib/redis';
 
 export default async function Home() {
 

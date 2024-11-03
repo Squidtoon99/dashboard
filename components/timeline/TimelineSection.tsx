@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import {useEffect} from "react"
 import {Labels, Background} from "./vectors";
-import { Session } from "@/lib/types";
+import { Session } from "@/components/lib/types";
 
 const FadeGradient = () => {
     return <div className="absolute w-1/4 h-full right-0 pointer-events-none bg-gradient-to-r from-transparent to-black"></div>
