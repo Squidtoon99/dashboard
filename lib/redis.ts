@@ -50,9 +50,6 @@ const getUsage = async () => {
             continue;
         }
 
-
-        const actualUsage = parseInt(usage) / 60;
-        // remove the key prefix
         const name = key.replace('agg:total:', '');
         data.push({ name, usage});
     }

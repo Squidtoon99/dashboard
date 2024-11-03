@@ -9,7 +9,7 @@ const Background = ({ labels }: {labels: number[]}) => {
     return <g id="timeline-progress-background"><g fill="#A2A2A2" fontSize="12" fontFamily="Roboto, Arial, sans-serif">
         {labels.map((label, index) => {
             return <g key={index}>
-                <text x={start + distance * index} y="35">{label}</text>
+                <text x={start + distance * index} y="152">{label}</text>
             </g>;
         })}
     </g>

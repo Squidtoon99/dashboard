@@ -41,7 +41,7 @@ const TimelineSection = ({ sessions, now }: {sessions: Session[], now: number}) 
                             // make the left the percentage of the duration of the session
                             let left = (((session.start*1000) - now) / totalDuration) * 100;
 
-                            return <div key={session.id} className={`${colors[session.classification]} relative`} style={{ width: `${width}%`, left: `${idx * 2}px`}}>
+                            return <div key={session.id} className={`${colors[session.classification]} absolute`} style={{ width: `${width+2}%`, left: `${idx * 30}px`, opacity: "70%"}}>
                                 <div>
                                     <div className="flex items-center space-x-2">
                                         <div className="w-6 h-24 rounded-full"></div>

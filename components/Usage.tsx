@@ -2,7 +2,7 @@
 
 import { Forward } from "./icons/forward";
 
-import { Pie, PieChart } from "recharts";
+import { Bar, BarChart } from "recharts";
 
 import { ChartConfig, ChartContainer } from "@/components/ui/chart";
 
@@ -27,9 +27,9 @@ const Usage = ({ usageData }: { usageData: any; }) => {
         <div className="text-zinc-500 leading-relaxed">
 
             <ChartContainer config={chartConfig} className="min-h-[200px] w-[200px]">
-                <PieChart width={200} height={200}>
-                    <Pie dataKey="usage" data={usageData} fill="#60a5fa" />
-                </PieChart>
+                <BarChart width={200} height={200}>
+                    <Bar dataKey="usage" data={usageData} fill="#60a5fa" />
+                </BarChart>
             </ChartContainer>
         </div>
     </div>
